@@ -1,43 +1,56 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
-    }
-
+    }//h2
     p {
       padding:0 15px;
-    }
-  
-  }
+    }//p
+    img{
+      border-radius: 5px;
+      max-width: 100%;
+      margin-top:10.2rem;
+    }//img
+  }//.intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+      }//img
+    .blast{
+      @media @phone{
+        width:100%;
+      }//.blast phone
+    }//.blast
+    .sky{
+      @media @phone{
+        display:none;
+      }//.sky phone
+    }//.sky
+    .launch{
+      @media @phone{
+        display:none;
+      }//.launch phone
+    }//.launch 
+  }//.space-images
 
   .visit-planets {
     padding: 15px;
-
     h3 {
       margin-top: 11px;
-    }
-
+    }//h3
     p {
       margin-top: 13px;
-    }
-  }
+    }//p
+  }//.visit-planets
 
   .walk {
     margin-top: 60px;
@@ -45,31 +58,54 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{
+      margin-top:2rem;
+      flex-direction: column-reverse;
+      padding: 1.7rem;
+    }//.walk @media
     .walk-text {
       width: 50%;
-
+      @media @phone{
+        width: 100%;
+        padding-top:3rem;
+      }//.walk-text @media
       h3 {
         margin-bottom: 10px;
-      }
-
+      }//h3
       p {
         margin-bottom: 26px;
-      }
-
+      }//p
       .btn {
-      }
-    }
+        height:3.7rem;
+        a{
+          .sButtonA(@btn-bg, @btn-clr, 10rem);
+          &:hover{
+            .btnInvert(@btn-bg, @btn-clr);
+            padding:0.4rem 0; 
+          }//a:hover
+          @media @phone{
+            .sButtonA(@btn-bg, @btn-clr, 100%);
+            padding: 2rem 0;
+            &:hover{
+              padding: 1.8rem 0;
+            }//a @media hover
+          }//a @media
+        }//a
+      }//.btn
+    }//.walk-text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        width:100%;
+        margin:0 auto;
+      }//.walk-img @media
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
+      }//img
+    }//.walk-img
+  }//.walk
 }// home
