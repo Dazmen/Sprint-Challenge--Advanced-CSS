@@ -6,16 +6,14 @@ nav {
     border-bottom: 1px solid @nav-border;
     background: @nav-bg;
     .navH1{
-        display:flex;
-        justify-content: center;
+        .flex-jc-cen();
         h1 {
             font-size:4rem;
             padding-top: 1.2rem;
         }//h1
     }//.navH1
     .navBar{
-        display:flex;
-        justify-content: center;
+        .flex-jc-cen();
         max-width: 50rem;
         width:100%;
         padding: 2rem 0 1rem 0;
@@ -24,6 +22,9 @@ nav {
             font-size: 1.8rem;
             color:@nav-font;
             padding:0 1.5rem;
+            &:hover{
+                color:@waterloo;
+            }//a:hover
         }//a
     }//.navBar
 }//nav
