@@ -166,6 +166,10 @@ nav {
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
   background: #F6F6F6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
 }
 nav .navH1 {
   display: flex;
@@ -215,6 +219,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
   max-width: 100%;
+  margin-top: 10.2rem;
 }
 .home .space-images {
   display: flex;
